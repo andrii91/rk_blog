@@ -1,5 +1,47 @@
 @import '../../mq';
 
 @media #{$tabletLandscape} {
-    @import '../desktop';
+  @import '../desktop';
+
+  .top-news {
+    display: block;
+    flex-wrap: wrap;
+
+    .news-title {
+      width: 100%;
+    }
+
+    .news-item {
+      max-width: 100%;
+    }
+  }
+
+  #navbarColor02 {
+    padding: 0;
+  }
+
+  .navbar-logo {
+    margin-left: 0;
+  }
+
+  .first-post .card {
+    max-width: 460px;
+  }
+
+  .social-list {
+    margin-top: 0;
+  }
+
+  .first-post .card-title {
+    max-width: 537px;
+  }
+  .news-title {
+    margin-top: -5px;
+  }
+  .nav-user {
+    position: static;
+  }
+  .news-item .content .title {
+    font-size: 14px;
+  }
 }

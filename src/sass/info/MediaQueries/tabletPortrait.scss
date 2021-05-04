@@ -1,8 +1,63 @@
 @import '../../mq';
 
 @media #{$tabletPortrait} {
-    @import '../mobile';
-  	& {
-     
-	}
+  @import '../mobile';
+
+  & {
+    .posts-item .card-title {
+      min-height: 78px;
+    }
+
+    .tags .title {
+      width: inherit;
+      margin-bottom: 0;
+    }
+
+    .tags-block .tags {
+      justify-content: flex-start;
+    }
+
+    .tags {
+      order: auto;
+      max-width: calc(60% - 15px);
+      flex-wrap: nowrap;
+
+      .tags-list {
+        margin-bottom: 0;
+
+        li {
+          margin-left: 20px;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .input-search {
+      max-width: 40%;
+      margin-right: 15px;
+    }
+  }
+
+  .top-news {
+    display: flex;
+    flex-wrap: wrap;
+
+    .news-title {
+      width: 100%;
+    }
+
+    .news-item {
+      max-width: 50%;
+    }
+  }
+
+  .tags-block {
+    .tags {
+      max-width: 100%;
+    }
+  }
+
+  .tags-list {
+    flex-wrap: wrap;
+  }
 }

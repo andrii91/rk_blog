@@ -27,50 +27,347 @@
 </head>
 
 <body class="app header-fixed">
-
-  <header class="navbar navbar-expand-lg navbar-light app-header">
+  <header class="navbar navbar-expand-lg navbar-light app-header fixed-top">
     <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <a href="" class="navbar-logo"><img src="images/logo.svg" alt=""></a>
-      <ul class="nav navbar-nav navbar-main-menu flex-grow-2 menu menu-bar position-static">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Testimonials</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Blog</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav nav-user right-navbar text-center">
-        <li class="nav-item">
-          <a href="https://rebatekey.com/sign-in" rel="nofollow" title="Sign In" class="nav-link btn-link">
-            <span class="d-none d-sm-inline-block">Sign In</span>
-            <span class="d-inline-block d-sm-none pr-3 pr-sm-0"><i class="fal fa-sign-in"></i></span>
-          </a>
-        </li>
-        <li class="nav-item pl-sm-3">
-          <a data-e2e="sign-up-btn" href="https://rebatekey.com/user/html/sign-up" title="Sign Up" rel="nofollow" class="btn btn-primary px-3-5 d-none d-sm-inline-block rounded-0 font-weight-bold" data-toggle="modal" data-target="#generic-modal" data-modal-size="modal-lg">
-            <span class="d-none d-sm-inline-block">Sign Up</span>
-          </a>
-          <a href="https://rebatekey.com/user/html/sign-up" title="Sign Up" rel="nofollow" class="d-sm-none" data-toggle="modal" data-target="#generic-modal" data-modal-size="modal-lg">
-            <i class="fal fa-user-plus"></i>
-          </a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+
+
+        <ul class="navbar-nav text-center justify-content-center mx-auto flex-grow-2">
+          <li class="nav-item">
+            <a class="nav-link" href="https://rebatekey.com" title="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://rebatekey.com/company/about-us.html" title="About Us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://rebatekey.com/help/testimonials.html" title="Testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://rebatekey.com/help/faq.html" title="FAQ">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://rebatekey.com/company/contact-us.html" title="Contact Us">Contact Us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/" title="Blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+        <ul class="nav navbar-nav nav-user right-navbar text-center">
+          <li class="nav-item">
+            <a href="https://rebatekey.com/sign-in" rel="nofollow" title="Sign In" class="nav-link btn-link">
+              <span class="d-none d-sm-inline-block">Sign In</span>
+              <span class="d-inline-block d-sm-none "><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.4979 1.00001C8.22177 1.00171 7.99929 1.22694 8.00099 1.50307C8.00268 1.77921 8.22791 2.00169 8.50405 1.99999L8.4979 1.00001ZM8.50098 17.9999C8.22484 17.9999 8.00098 18.2238 8.00098 18.4999C8.00097 18.7761 8.22483 18.9999 8.50097 18.9999L8.50098 17.9999ZM18 18.5L18 18L18 18.5ZM8.50405 1.99999L17.997 1.94165L17.9908 0.941671L8.4979 1.00001L8.50405 1.99999ZM18.5 2.44164V17.5H19.5V2.44164H18.5ZM18 18L8.50098 17.9999L8.50097 18.9999L18 19L18 18ZM18.5 17.5C18.5 17.7762 18.2762 18 18 18L18 19C18.8285 19 19.5 18.3285 19.5 17.5H18.5ZM17.997 1.94165C18.2743 1.93995 18.5 2.1643 18.5 2.44164H19.5C19.5 1.60961 18.8228 0.936558 17.9908 0.941671L17.997 1.94165Z" fill="black"/><path d="M1 9.49975C0.723858 9.49975 0.5 9.7236 0.5 9.99975C0.5 10.2759 0.723858 10.4997 1 10.4997V9.49975ZM13.2398 9.99975L13.6067 10.3394L13.9212 9.99975L13.6067 9.66009L13.2398 9.99975ZM9.28681 4.99342C9.09922 4.79078 8.78287 4.77857 8.58023 4.96616C8.37758 5.15375 8.36538 5.47009 8.55297 5.67274L9.28681 4.99342ZM8.55297 14.3268C8.36538 14.5294 8.37758 14.8457 8.58023 15.0333C8.78287 15.2209 9.09922 15.2087 9.28681 15.0061L8.55297 14.3268ZM1 10.4997H13.2398V9.49975H1V10.4997ZM13.6067 9.66009L9.28681 4.99342L8.55297 5.67274L12.8729 10.3394L13.6067 9.66009ZM12.8729 9.66009L8.55297 14.3268L9.28681 15.0061L13.6067 10.3394L12.8729 9.66009Z" fill="black"/></svg></span>
+            </a>
+          </li>
+          <li class="nav-item pl-sm-3">
+            <a  href="https://rebatekey.com/user/html/sign-up" title="Sign Up" rel="nofollow" class="btn btn-primary px-3-5 d-none d-sm-inline-block rounded-0 font-weight-bold" >
+              <span class="d-none d-sm-inline-block">Sign Up</span>
+            </a>
+            <a href="https://rebatekey.com/user/html/sign-up" title="Sign Up" rel="nofollow" class="d-sm-none">
+              <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0223 5.00003C13.0223 7.46178 10.9155 9.50007 8.26264 9.50007C5.60977 9.50007 3.50293 7.46178 3.50293 5.00003C3.50293 2.53829 5.60977 0.5 8.26264 0.5C10.9155 0.5 13.0223 2.53829 13.0223 5.00003Z" stroke="#1BA2BB"/><path d="M15.0715 18.0596C15.0961 18.2725 14.9195 18.5 14.6256 18.5H8.26203L1.89844 18.5C1.60456 18.5 1.42797 18.2725 1.4526 18.0596C1.64393 16.4058 2.33529 14.8635 3.42307 13.6817C4.71405 12.2791 6.4557 11.4999 8.26203 11.4999C10.0684 11.4999 11.81 12.2791 13.101 13.6817C14.1888 14.8635 14.8801 16.4058 15.0715 18.0596Z" stroke="#1BA2BB"/><path d="M20.8586 5.50042C20.8586 5.22428 20.6348 5.00042 20.3586 5.00042C20.0825 5.00042 19.8586 5.22428 19.8586 5.50042H20.8586ZM19.8586 11.5005C19.8586 11.7766 20.0825 12.0005 20.3586 12.0005C20.6348 12.0005 20.8586 11.7766 20.8586 11.5005H19.8586ZM19.8586 5.50042V11.5005H20.8586V5.50042H19.8586Z" fill="#1BA2BB"/><path d="M17.2019 8.00058C16.9258 8.00058 16.7019 8.22444 16.7019 8.50058C16.7019 8.77673 16.9258 9.00058 17.2019 9.00058L17.2019 8.00058ZM23.5136 9.00058C23.7897 9.00058 24.0136 8.77673 24.0136 8.50058C24.0136 8.22444 23.7897 8.00058 23.5136 8.00058L23.5136 9.00058ZM17.2019 9.00058L23.5136 9.00058L23.5136 8.00058L17.2019 8.00058L17.2019 9.00058Z" fill="#1BA2BB"/></svg>
+            </a>
+          </li>
+        </ul>
+
     </div>
   </header>
-  
-  <main class="main"></main>
+
+  <main class="main">
+    <section class="head">
+      <div class="container">
+        <div class="h-group text-center mb-lg-5">
+          <h1 class="mb-3">Money saving blog by RebateKey</h1>
+          <h5>How to save money shopping online every single time.</h5>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="first-post">
+              <a href="#">
+                <img src="images/first-img.jpg" alt="">
+              </a>
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-subtitle">Jan 14, 2021</h6>
+                  <h4 class="card-title">At Prada, Supermodels, Virtual Models, and a History-Making Moment</h4>
+                  <div class="row align-items-center">
+                    <div class="col-lg-6">
+                      <div class="media align-items-center">
+                        <img class="rounded-circle" src="images/avatar.png" alt="">
+                        <div class="media-body text-left">
+                          <p class="my-0 name ">Kyle Goguen</p>
+                          <p class="my-0 post">Founder of Pawstruck</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul class="social-list">
+                        <li><a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.00049 1.56977H17.0005C17.7904 1.56977 18.4307 2.21011 18.4307 3V16.4233C18.4307 17.2132 17.7904 17.8536 17.0005 17.8536H11.4664C11.4664 15.9258 11.4665 13.4459 11.4673 11.7006H13.8205C13.9348 10.8119 14.0473 9.93793 14.1616 9.05148H11.4724C11.4713 9.03863 11.4701 9.02676 11.4689 9.01557C11.4663 8.98991 11.4641 8.96785 11.4641 8.9458C11.464 8.81373 11.4637 8.68167 11.4635 8.54964C11.4627 8.10977 11.4618 7.6701 11.4664 7.23043C11.4682 7.08328 11.4889 6.93391 11.5201 6.78988C11.6138 6.36003 11.9145 6.14511 12.3425 6.08224C12.5266 6.05504 12.7148 6.04255 12.9012 6.04032C13.2204 6.03622 13.5395 6.03703 13.8638 6.03786C13.9977 6.0382 14.1325 6.03854 14.2686 6.03854C14.2694 6.02047 14.2704 6.00316 14.2714 5.98631C14.2732 5.95451 14.275 5.92438 14.275 5.89407C14.2752 5.67366 14.2751 5.45325 14.2751 5.23284C14.275 4.73669 14.2749 4.24054 14.2768 3.74439C14.2773 3.66636 14.2599 3.63113 14.1712 3.6289C13.9253 3.62217 13.6794 3.61273 13.4334 3.60329C12.9461 3.58459 12.4588 3.56589 11.9715 3.56826C11.2442 3.57183 10.5577 3.75241 9.95535 4.16844C9.25056 4.65491 8.86533 5.33803 8.71473 6.14912C8.65596 6.46527 8.633 6.78988 8.62565 7.11137C8.61581 7.53563 8.61769 7.96012 8.61956 8.38451C8.62031 8.55424 8.62106 8.72395 8.62106 8.89363V9.04301H6.24268V11.6925H8.61142V17.8536H3.00049C2.21059 17.8536 1.57026 17.2132 1.57026 16.4233V3C1.57026 2.21011 2.21059 1.56977 3.00049 1.56977ZM0.000488281 3C0.000488281 1.34315 1.34363 0 3.00049 0H17.0005C18.6573 0 20.0005 1.34315 20.0005 3V16.4233C20.0005 18.0802 18.6573 19.4233 17.0005 19.4233H3.00049C1.34363 19.4233 0.000488281 18.0802 0.000488281 16.4233V3Z" fill="#4F4F4F" />
+                            </svg></a></li>
+                        <li><a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0005 1.7515C12.6712 1.7515 12.9879 1.76196 14.0426 1.80825C15.0174 1.85155 15.5478 2.00983 15.8999 2.14272C16.3673 2.31892 16.6994 2.52945 17.05 2.8699C17.4005 3.21035 17.6173 3.53287 17.7988 3.9868C17.9356 4.32874 18.0986 4.84389 18.1432 5.79057C18.1908 6.81489 18.2016 7.12249 18.2016 9.71615C18.2016 12.3098 18.1908 12.6174 18.1432 13.6417C18.0986 14.5884 17.9356 15.1036 17.7988 15.4455C17.6173 15.8994 17.4005 16.222 17.05 16.5624C16.6994 16.9028 16.3673 17.1134 15.8999 17.2896C15.5478 17.4225 15.0174 17.5807 14.0426 17.6241C12.9879 17.6703 12.6712 17.6808 10.0005 17.6808C7.32983 17.6808 7.01309 17.6703 5.95836 17.6241C4.98357 17.5807 4.45314 17.4225 4.10105 17.2896C3.63364 17.1134 3.30154 16.9028 2.95099 16.5624C2.60044 16.222 2.38365 15.8994 2.20222 15.4455C2.06538 15.1036 1.90241 14.5884 1.85782 13.6417C1.81015 12.6174 1.79939 12.3098 1.79939 9.71615C1.79939 7.12249 1.81015 6.81489 1.85782 5.79057C1.90241 4.84389 2.06538 4.32874 2.20222 3.9868C2.38365 3.53287 2.60044 3.21035 2.95099 2.8699C3.30154 2.52945 3.63364 2.31892 4.10105 2.14272C4.45314 2.00983 4.98357 1.85155 5.95836 1.80825C7.01463 1.76046 7.32983 1.7515 10.0005 1.7515ZM10.0005 0C7.2837 0 6.94238 0.0104522 5.87688 0.0582341C4.81139 0.106016 4.08567 0.270266 3.44914 0.509176C2.79109 0.757044 2.23296 1.09002 1.67792 1.62906C1.12134 2.1696 0.780013 2.71162 0.524786 3.34921C0.277246 3.96739 0.108117 4.67367 0.0604536 5.70695C0.0112531 6.74322 0.000488281 7.07321 0.000488281 9.71167C0.000488281 12.3501 0.0112531 12.6816 0.0604536 13.7164C0.109654 14.7512 0.278784 15.4559 0.524786 16.0741C0.780013 16.7132 1.12288 17.2552 1.67792 17.7943C2.2345 18.3348 2.79262 18.6663 3.44914 18.9142C4.08567 19.1546 4.81292 19.3188 5.87688 19.3651C6.94392 19.4129 7.2837 19.4233 10.0005 19.4233C12.7173 19.4233 13.0586 19.4129 14.1241 19.3651C15.1896 19.3173 15.9153 19.1531 16.5518 18.9142C17.2099 18.6663 17.768 18.3333 18.3231 17.7943C18.8796 17.2537 19.221 16.7117 19.4762 16.0741C19.7237 15.4559 19.8929 14.7497 19.9405 13.7164C19.9897 12.6801 20.0005 12.3501 20.0005 9.71167C20.0005 7.07321 19.9897 6.74173 19.9405 5.70695C19.8913 4.67217 19.7222 3.96739 19.4762 3.34921C19.221 2.71013 18.8781 2.1681 18.3231 1.62906C17.7665 1.08853 17.2084 0.757044 16.5518 0.509176C15.9153 0.268773 15.1881 0.104523 14.1241 0.0582341C13.0586 0.0119454 12.7173 0 10.0005 0ZM10.0004 4.72742C7.16365 4.72742 4.86353 6.96125 4.86353 9.71622C4.86353 12.4712 7.16365 14.705 10.0004 14.705C12.8371 14.705 15.1372 12.4712 15.1372 9.71622C15.1372 6.96125 12.8386 4.72742 10.0004 4.72742ZM10.0004 12.9535C8.15842 12.9535 6.66551 11.5036 6.66551 9.71472C6.66551 7.92586 8.15842 6.47596 10.0004 6.47596C11.8423 6.47596 13.3352 7.92586 13.3352 9.71472C13.3352 11.5036 11.8423 12.9535 10.0004 12.9535ZM16.5427 4.52966C16.5427 5.17337 16.0051 5.69519 15.3419 5.69519C14.6787 5.69519 14.1411 5.17337 14.1411 4.52966C14.1411 3.88596 14.6787 3.36414 15.3419 3.36414C16.0051 3.36414 16.5427 3.88596 16.5427 4.52966Z" fill="#4F4F4F" />
+                            </svg></a></li>
+                        <li><a href="#"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M18.0005 2.66643C17.3387 2.95935 16.6266 3.1572 15.8797 3.24584C16.6421 2.79105 17.2277 2.07032 17.5038 1.21083C16.7904 1.63222 15.9996 1.93799 15.1585 2.10372C14.4851 1.38941 13.5253 0.942322 12.4636 0.942322C10.4241 0.942322 8.77021 2.58935 8.77021 4.61922C8.77021 4.907 8.80247 5.18836 8.86568 5.45687C5.79666 5.30398 3.07596 3.83939 1.25441 1.61424C0.937061 2.15768 0.753874 2.78848 0.753874 3.46296C0.753874 4.7387 1.40534 5.86413 2.3961 6.52448C1.79107 6.50521 1.22087 6.34076 0.724202 6.06454C0.724202 6.07996 0.724202 6.09538 0.724202 6.1108C0.724202 7.89272 1.99748 9.37915 3.68614 9.71704C3.37653 9.80054 3.05015 9.84551 2.71345 9.84551C2.47608 9.84551 2.24387 9.82238 2.01812 9.77999C2.48769 11.2407 3.85127 12.3045 5.4677 12.334C4.20345 13.3207 2.61154 13.9091 0.881587 13.9091C0.583587 13.9091 0.289458 13.8911 0.000488281 13.8577C1.63498 14.9009 3.5752 15.5099 5.6612 15.5099C12.4533 15.5099 16.1673 9.90589 16.1673 5.04704C16.1673 4.88773 16.1635 4.72971 16.157 4.57169C16.8794 4.05137 17.5051 3.40387 18.0005 2.66643Z" fill="#4F4F4F" />
+                            </svg></a></li>
+                        <li><a href="#"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M16.0005 4.67164C15.9719 4.84956 15.9531 5.02962 15.9131 5.20521C15.7523 5.91028 15.3881 6.50192 14.8599 7.00907C13.8747 7.955 12.9013 8.91219 11.9183 9.86025C11.5997 10.1675 11.2905 10.4909 10.9357 10.7547C9.71205 11.6647 8.00804 11.6865 6.73924 10.8367C6.44964 10.6426 6.18663 10.4185 5.96883 10.1514C5.74283 9.87443 5.75423 9.4576 5.97403 9.17305C6.20523 8.87392 6.60364 8.75661 6.95464 8.87528C7.10204 8.92501 7.20924 9.02096 7.32224 9.1175C7.49644 9.26647 7.66464 9.43157 7.86364 9.5419C8.61985 9.96106 9.50605 9.8315 10.1303 9.22743C10.8337 8.54683 11.5343 7.86312 12.2363 7.18116C12.7333 6.69829 13.2363 6.22086 13.7265 5.73158C14.2239 5.23531 14.3921 4.63707 14.2077 3.97026C14.0211 3.29509 13.5593 2.85185 12.8621 2.67801C12.1737 2.50631 11.5607 2.67723 11.0537 3.16418C10.3501 3.83993 9.65325 4.52247 8.95465 5.20346C8.90985 5.24716 8.87465 5.26464 8.80925 5.23667C8.05764 4.91541 7.30104 4.90356 6.54124 5.21142C6.53584 5.21356 6.52884 5.21162 6.49824 5.1885C6.57564 5.12207 6.65704 5.05914 6.73004 4.98844C7.74384 4.0058 8.75965 3.0253 9.76805 2.03742C10.3761 1.4419 11.0973 1.07673 11.9551 0.969515C12.0239 0.960774 12.0921 0.951451 12.1605 0.942322C12.3205 0.942322 12.4805 0.942322 12.6405 0.942322C12.6587 0.947955 12.6767 0.955724 12.6953 0.958832C12.9111 0.995154 13.1309 1.01652 13.3425 1.06916C14.7249 1.41276 15.7989 2.61139 15.9675 3.98813C15.9765 4.06077 15.9895 4.13303 16.0005 4.20567C16.0005 4.36086 16.0005 4.51625 16.0005 4.67164Z" fill="#4F4F4F" />
+                              <path d="M0.000488281 12.7517C0.0234883 12.5991 0.0394883 12.445 0.0706883 12.2939C0.221688 11.5652 0.584889 10.9514 1.12789 10.4285C2.30069 9.29865 3.46529 8.16064 4.63529 7.02826C5.48329 6.20762 6.50829 5.86208 7.6935 5.99999C8.5105 6.09497 9.2107 6.44342 9.7913 7.01194C9.9173 7.13528 10.0537 7.24949 10.1253 7.41789C10.2641 7.74478 10.1965 8.0979 9.9385 8.35001C9.6909 8.59203 9.3115 8.66914 8.9887 8.51822C8.8581 8.45723 8.7403 8.35798 8.6371 8.25639C8.3161 7.94018 7.9459 7.72089 7.48669 7.66165C6.86389 7.58124 6.32709 7.7578 5.88249 8.18628C5.19429 8.84958 4.51069 9.51755 3.82509 10.1832C3.30209 10.6911 2.76969 11.1903 2.25809 11.7089C1.74169 12.2323 1.59109 12.8609 1.82409 13.5481C2.06149 14.2477 2.58149 14.6667 3.32789 14.7824C3.95229 14.8794 4.50089 14.6913 4.95149 14.2563C5.57989 13.6493 6.20509 13.0392 6.83169 12.4305C6.91889 12.3458 6.99429 12.2168 7.0975 12.1904C7.1951 12.1655 7.3219 12.2483 7.4357 12.2846C8.1175 12.5012 8.7907 12.4864 9.4545 12.2147C9.4627 12.2114 9.4729 12.2125 9.4973 12.2281C9.4305 12.2881 9.3615 12.346 9.2973 12.4083C8.2295 13.4432 7.16849 14.4847 6.09249 15.5116C5.49209 16.0848 4.75689 16.395 3.91609 16.4643C3.89069 16.4664 3.86569 16.4754 3.84069 16.4812C3.68069 16.4812 3.52069 16.4812 3.36069 16.4812C3.28949 16.4707 3.21869 16.4585 3.14729 16.4497C1.53029 16.2555 0.231688 14.9982 0.0336883 13.4354C0.0240883 13.3626 0.0114883 13.2903 0.000488281 13.2179C0.000488281 13.0625 0.000488281 12.9071 0.000488281 12.7517Z" fill="#4F4F4F" />
+                            </svg></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="top-news">
+              <h3 class="news-title">Top news</h3>
+              <div class="news-item">
+                <a href="#"></a>
+                <img src="images/img2.jpg" alt="">
+                <div class="content">
+                  <div class="date">Jan 14, 2021</div>
+                  <div class="title">The Over-50 Women Showing Us All How It's Done on Instagram</div>
+                </div>
+              </div>
+              <div class="news-item">
+                <a href="#"></a>
+                <img src="images/img3.jpg" alt="">
+                <div class="content">
+                  <div class="date">Jan 14, 2021</div>
+                  <div class="title">Fendi’s Biggest Front Row Surprise? Social Media’s Most Popular Twins</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="search-block">
+      <div class="container d-flex align-items-center">
+        <div class="input-search position-relative">
+          <form action="https://eliteseller.com/blog"> <input class="form-control" type="text" id="searchPost" name="s" placeholder="Search a post"> <button class="form-control-search" type="submit" onclick="return checkForm()"> <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.35" d="M16.8403 18C16.5225 17.9597 16.3118 17.7507 16.0995 17.5396C13.6779 15.1303 14.7079 16.1304 12.2857 13.7218C12.152 13.5888 12.0223 13.452 11.887 13.313C9.90927 14.7252 7.75136 15.167 5.41148 14.5237C3.63417 14.0351 2.23418 12.9906 1.2216 11.4545C-0.812132 8.3692 -0.258395 4.29732 2.52392 1.854C5.28125 -0.567414 9.33685 -0.620306 12.1578 1.71497C15.0872 4.14016 15.8184 8.52837 13.3238 11.8832C13.3755 11.9195 13.4417 11.9525 13.4911 12.0018C15.9302 14.4411 14.9151 13.4738 17.3526 15.9143C17.415 15.9768 17.4743 16.0418 17.5376 16.103C17.7532 16.3115 17.9586 16.5256 18 16.8424C18 16.9011 18 16.9598 18 17.0185C17.9432 17.29 17.8291 17.5285 17.6179 17.7182C17.4513 17.8678 17.2512 17.9408 17.0422 17.9997C16.9748 18 16.9074 18 16.8403 18ZM1.86847 7.40254C1.84525 10.4836 4.36533 12.9559 7.42477 12.9524C10.4953 12.9488 12.9823 10.4753 12.9828 7.42068C12.9833 4.32478 10.5097 1.8613 7.40508 1.8603C4.30072 1.85904 1.84172 4.40008 1.86847 7.40254Z" fill="#142948"></path>
+              </svg> </button></form>
+        </div>
+        <div class="tags">
+          <div class="title">Popular tags:</div>
+          <ul class="tags-list">
+            <li><a href="#">Manage</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Keywords</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="posts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Kyle Goguen</span> Jan 21, 2018</div>
+                <h4 class="card-title">How Should You Optimize Your Amazon Listing?</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Deothemes</span> Jan 21, 2018</div>
+                <h4 class="card-title">Over 100 million items delivered to healthcare and government organizations</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Kyle Goguen</span> Jan 21, 2018</div>
+                <h4 class="card-title">How Should You Optimize Your Amazon Listing?</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Kyle Goguen</span> Jan 21, 2018</div>
+                <h4 class="card-title">How Should You Optimize Your Amazon Listing?</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Deothemes</span> Jan 21, 2018</div>
+                <h4 class="card-title">Over 100 million items delivered to healthcare and government organizations</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Kyle Goguen</span> Jan 21, 2018</div>
+                <h4 class="card-title">How Should You Optimize Your Amazon Listing?</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Kyle Goguen</span> Jan 21, 2018</div>
+                <h4 class="card-title">How Should You Optimize Your Amazon Listing?</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Deothemes</span> Jan 21, 2018</div>
+                <h4 class="card-title">Over 100 million items delivered to healthcare and government organizations</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="posts-item card"><a href="#"></a>
+              <img src="images/img4.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <div class="card-date">by <span>Kyle Goguen</span> Jan 21, 2018</div>
+                <h4 class="card-title">How Should You Optimize Your Amazon Listing?</h4>
+                <p class="card-text">IsIs your current advertising strategy not moving you up the rankings as much as you expected? Maybe it’s time to take a peek at some of your campaigns! Marketing ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul class="pagination pagination-style">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.82857 14L2 7.5942L8 1" stroke="#9CA1B2" stroke-width="2" />
+                  </svg> <span>Previous</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.17143 1L7 7.4058L0.999997 14" stroke="#1AA1BB" stroke-width="2" />
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="tags-block">
+      <div class="container">
+        <div class="tags">
+          <div class="title">Popular tags:</div>
+          <ul class="tags-list">
+            <li><a href="#">Manage</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Keywords</a></li>
+            <li><a href="#">Keywords</a></li>
+            <li><a href="#">Keywords</a></li>
+            <li><a href="#">Keywords</a></li>
+            <li><a href="#">Keywords</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="start text-center mt-lg-5 mb-lg-5">
+      <div class="container">
+        <h2 class="h2">Start now and claim your 1st rebate!</h2>
+        <p>Get up to cash back rebates when shopping your favorite online stores! It’s FREE!</p>
+        <a href="https://rebatekey.com/buyer/sign-up.html" class="btn btn-secondary">Sign up</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-title">Follow us</div>
+          <ul class="footer-social">
+            <li><a href="https://www.instagram.com/rebatekey/" target="_blank"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.5888 0H5.41125C2.42747 0 0 2.42695 0 5.41079V11.1266V22.5892C0 25.5731 2.42747 28 5.41125 28H22.5893C25.5731 28 28 25.5731 28 22.5892V11.126V5.41023C27.9994 2.42638 25.5725 0 22.5888 0ZM24.1408 3.22671L24.7598 3.22445V3.84065V7.97047L20.0297 7.98572L20.0133 3.24026L24.1408 3.22671ZM10.0035 11.126C10.9004 9.88515 12.3553 9.07127 14 9.07127C15.6447 9.07127 17.0996 9.88515 17.9953 11.126C18.5787 11.9359 18.9284 12.9266 18.9284 13.9997C18.9284 16.717 16.7155 18.9276 13.9994 18.9276C11.2817 18.9276 9.07108 16.717 9.07108 13.9997C9.07165 12.9266 9.42012 11.9359 10.0035 11.126ZM25.2715 22.5886C25.2715 24.069 24.0679 25.2715 22.5888 25.2715H5.41125C3.9315 25.2715 2.72793 24.069 2.72793 22.5886V11.126H6.90737C6.54647 12.0139 6.34371 12.9836 6.34371 13.9997C6.34371 18.2205 9.77763 21.6567 14 21.6567C18.2218 21.6567 21.6557 18.2205 21.6557 13.9997C21.6557 12.9836 21.4518 12.0139 21.0909 11.126H25.2715V22.5886Z" fill="black" />
+                </svg></a></li>
+            <li><a href="https://twitter.com/rebatekey" target="_blank"><svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M28 3.02789C27.5283 3.31562 26.1133 3.89202 24.7966 4.035C25.6417 3.52953 26.8935 1.87504 27.2028 0.55942C26.3893 1.13681 24.5214 1.97535 23.6003 1.97535C23.6003 1.97535 23.6003 1.97633 23.6003 1.97722C22.5483 0.760085 21.0675 0 19.4252 0C16.2354 0 13.6488 2.86512 13.6488 6.39745C13.6488 6.88782 13.7001 7.36672 13.7949 7.82573H13.7941C9.4669 7.69988 4.73473 5.29756 1.88595 1.18593C0.134148 4.54422 1.64998 8.27918 3.63759 9.64028C2.95745 9.69703 1.70472 9.55316 1.11513 8.91612C1.07587 11.1451 2.04318 14.0983 5.57134 15.1698C4.89202 15.5748 3.68889 15.4584 3.16597 15.3723C3.34961 17.2541 5.72857 19.714 8.32962 19.714C7.40255 20.9018 3.91442 23.0562 0 22.3709C2.65836 24.1626 5.75673 25.2 9.03629 25.2C18.3554 25.2 25.5929 16.8338 25.2033 6.51297C25.2016 6.50155 25.2016 6.49023 25.2007 6.47793C25.2016 6.45145 25.2033 6.42492 25.2033 6.39745C25.2033 6.36531 25.2007 6.33495 25.1998 6.30379C26.0483 5.66104 27.1865 4.52434 28 3.02789Z" fill="black" />
+                </svg></a></li>
+            <li><a href="https://www.facebook.com/rebatekey" target="_blank"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5791 0C26.4672 0 28 1.53289 28 3.42092V24.5791C28 26.4671 26.4671 28 24.5791 28H18.7566V17.45H22.3988L23.0918 12.9316H18.7566V9.99944C18.7566 8.76334 19.3622 7.55841 21.304 7.55841H23.275V3.7117C23.275 3.7117 21.4862 3.40643 19.776 3.40643C16.2055 3.40643 13.8719 5.57036 13.8719 9.4879V12.9316H9.90309V17.45H13.8719V28H3.42092C1.53289 28 0 26.4671 0 24.5791V3.42092C0 1.53289 1.53284 0 3.42092 0H24.5791V0Z" fill="black" />
+                </svg></a></li>
+            <li><a href="https://www.pinterest.com/rebatekey/" target="_blank"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0ZM20.0385 14.9158C18.8325 18.0514 16.5814 18.6291 15.1549 18.6291C13.7284 18.6291 12.8686 17.4596 12.8686 17.4596C12.8686 17.4596 12.4593 19.5792 12.0851 20.5294C11.8721 21.0703 11.5466 21.634 11.3055 22.0203C11.2929 22.0449 11.2782 22.0684 11.2614 22.0904C11.0838 22.3219 10.869 22.5223 10.6258 22.6834C10.5838 22.7108 10.5355 22.7271 10.4856 22.7308C10.4356 22.7345 10.3854 22.7255 10.3399 22.7046C10.2943 22.6837 10.2548 22.6516 10.225 22.6113C10.1951 22.571 10.176 22.5238 10.1694 22.4741C10.1444 22.2882 10.1163 22.0236 10.0902 21.6513C10.0439 21.1461 10.0187 20.4778 10.1495 19.981C10.3687 19.1477 11.4943 14.1703 11.4943 14.1703C10.5587 11.6414 11.9621 10.2383 13.1608 10.1796C14.3595 10.1209 14.5348 11.7144 14.3155 12.4163C14.0962 13.1182 13.592 14.894 13.5043 15.201C13.4165 15.508 13.7236 17.2841 15.5434 16.8675C17.3633 16.4509 18.1089 13.6881 18.1089 11.7804C18.1089 9.87273 16.9029 8.13323 14.0524 8.08937C11.202 8.04552 9.75472 10.1798 9.40401 11.7146C9.0533 13.2495 9.7329 14.3312 9.93759 14.6163C10.1423 14.9013 10.113 14.9818 10.0838 15.2668C10.0546 15.5518 9.9744 16.2096 9.55752 16.2243C9.14063 16.2389 8.2857 15.4641 7.95687 14.8064C6.88007 12.6527 7.57766 10.1376 9.13478 8.39289C11.1285 6.15896 15.0167 5.79086 17.5828 7.17571C20.3455 8.6666 21.2445 11.7802 20.0385 14.9158Z" fill="black" />
+                </svg></a></li>
+            <li><a href="http://youtube.com/c/RebateKey" target="_blank"><svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.4151 3.06059C27.0931 1.85582 26.1444 0.907158 24.9396 0.585157C22.7558 -1.56463e-07 14 0 14 0C14 0 5.24416 -1.56463e-07 3.06037 0.585157C1.85582 0.907158 0.906939 1.85582 0.584993 3.06059C0 5.24416 0 9.80018 0 9.80018C0 9.80018 0 14.3561 0.584993 16.5394C0.906939 17.7442 1.85582 18.6932 3.06037 19.0151C5.24416 19.6 14 19.6 14 19.6C14 19.6 22.7558 19.6 24.9396 19.0151C26.1444 18.6932 27.0931 17.7442 27.4151 16.5394C28 14.3561 28 9.80018 28 9.80018C28 9.80018 28 5.24416 27.4151 3.06059ZM11.1999 14.0002V5.60007L18.4743 9.80018L11.1999 14.0002Z" fill="black" />
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 col-md-3 order-2 order-lg-2">
+          <div class="footer-title">Earn cashback</div>
+          <ul class="footer-list">
+            <li><a href="https://rebatekey.com/register">Sigh up</a></li>
+            <li><a href="https://rebatekey.com/sign-in">Sign in</a></li>
+            <li><a href="https://go.rebatekey.com/amz-seller/">Amazon sellers</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 col-md-3 order-3 order-lg-3">
+          <div class="footer-title">Company</div>
+          <ul class="footer-list">
+            <li><a href="https://rebatekey.com/about">About us</a></li>
+            <li><a href="https://rebatekey.com/contact">Contact us</a></li>
+            <li><a href="https://blog.rebatekey.com/">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 col-md-3 order-5 order-lg-4">
+          <div class="footer-title">Help</div>
+          <ul class="footer-list">
+            <li><a href="https://rebatekey.com/help/testimonials">Testimonials</a></li>
+            <li><a href="https://rebatekey.com/help/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 col-md-3 order-4 order-lg-5">
+          <div class="footer-title">Referral&nbsp;program</div>
+          <ul class="footer-list">
+            <li><a href="https://rebatekey.com/buyer/affiliate/">Buyers program</a></li>
+            <li><a href="https://rebatekey.com/seller/affiliate/">Sellers program</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script defer src="js/vendor.js"></script>
   <script defer src="js/app.js"></script>

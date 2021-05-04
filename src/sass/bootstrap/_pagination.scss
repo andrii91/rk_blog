@@ -1,7 +1,7 @@
 .pagination {
-  display: flex;
   @include list-unstyled();
   @include border-radius();
+  justify-content: center;
 }
 
 .page-link {

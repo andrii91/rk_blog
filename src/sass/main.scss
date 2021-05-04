@@ -1,5 +1,11 @@
 
+@import 'fonts';
 @import 'bootstrap/bootstrap';
 @import 'info/main';
 
 
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
