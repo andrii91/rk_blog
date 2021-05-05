@@ -168,41 +168,181 @@
 
     }
   }
+
   .pagination-style {
     margin-top: 15px;
-    
+
     .page-item:first-child svg {
-    margin-right: 0;
+      margin-right: 0;
+    }
   }
-  }
+
   .tags-block {
     padding: 40px 0;
   }
+
   .start {
     padding: 45px 0;
+
     .h2 {
       font-size: 25px;
       line-height: 130%;
       margin-bottom: 16px;
     }
+
     p {
       font-size: 16px;
       line-height: 120%;
       margin-bottom: 29px;
     }
   }
+
   .footer {
     padding: 40px 0 0;
- 
+
   }
+
   .footer-list li:last-child {
     margin-bottom: 10px;
   }
+
   .footer-social {
     margin-top: 35px;
     margin-bottom: 45px;
   }
+
   .footer-list {
     margin-bottom: 50px;
+  }
+
+  .single-content .tags-top {
+    margin-left: 0;
+    margin-bottom: 0px;
+  }
+
+  .single-head {
+    .first-post {
+      &:after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+
+      img.full-img {
+        width: inherit;
+        max-height: 414px;
+        float: right;
+        clear: both;
+        margin-right: -15px;
+      }
+    }
+
+    .first-post .card {
+      left: inherit;
+      right: -16px;
+      bottom: 48px;
+      max-width: 469px;
+    }
+  }
+
+  .single-head .first-post .card-subtitle,
+  .single-head .first-post .card-title {
+    padding-left: 0;
+  }
+
+  .single-social {
+    position: static;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    //    margin-left: 15px;
+    margin-bottom: 30px;
+
+    li {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+
+  .content-item {
+    font-size: 16px;
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    h6,
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .amazon-block,
+    .minus,
+    .plus {
+      margin-bottom: 20px;
+    }
+
+    p + img {
+      margin-top: 45px;
+    }
+
+    blockquote {
+      font-size: 25px;
+      line-height: 37px;
+      margin: 20px auto;
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 20px;
+    }
+
+    .sourses {
+
+      h6,
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .related {
+    padding-top: 5px;
+
+    .h2 {
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 130%;
+      margin-bottom: 15px;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .single-content .tags {
+    max-width: 100%;
+  }
+
+  .tags {
+    align-items: flex-start;
+  }
+
+  .tags-list {
+    li {
+      margin-bottom: 15px;
+    }
+
+    margin-bottom: 5px;
+  }
+  .emaillist {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

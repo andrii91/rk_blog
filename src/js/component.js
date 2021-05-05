@@ -1,6 +1,14 @@
 $(document).ready(function() { 
-  $('.head-img img').click(function(){
-    var destination = $(".program").offset().top - 0;
-    $("body,html").animate({ scrollTop: destination}, 500 );
-  });
+  
+  $('.sourses p').each(function(index){
+    if(index > 1) {
+      $(this).hide()
+    }
+  })
+  
+  $('.sourses  .more-btn').click(function(e){
+    e.preventDefault();
+    $(this).parents('.sourses').find('p').show();
+    $(this).hide();
+  })
 });
