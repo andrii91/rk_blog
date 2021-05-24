@@ -341,8 +341,59 @@
 
     margin-bottom: 5px;
   }
+
   .emaillist {
     margin-left: auto;
     margin-right: auto;
+  }
+
+
+  .products_v2 .products-item {
+    flex-wrap: wrap;
+
+    //    justify-content: space-between;
+    .img {
+      order: 1;
+      margin: 0;
+    }
+
+    .products-group {
+      order: 2;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-left: 52px;
+
+      .prices {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    .title {
+      order: 3;
+      margin-top: 10px;
+    }
+  }
+
+  .single_products {
+    padding: 0 ;
+
+    .img {
+      margin: 0 0 15px;
+
+    }
+
+    .single_products-group {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+
+    .prices {
+      margin-bottom: 30px;
+    }
+    .minus {
+//      margin-top: 30px;
+    }
   }
 }

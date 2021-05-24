@@ -60,4 +60,30 @@
   .tags-list {
     flex-wrap: wrap;
   }
+  
+    .products_v2 .products-item {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .img {
+      order: 1;
+      margin: 0 15px 0 0;
+    }
+    
+    .products-group {
+      order: 3;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-left: 52px;
+      .prices {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    .title {
+      order: 2;
+      margin-top: 0px;
+//      max-width: 285px;
+    }
+  }
 }
